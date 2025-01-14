@@ -1048,7 +1048,7 @@ namespace BartGame
                     {
                         if (positionRectangle.Bottom > s.positionRectangle.Top && Velocity.Y >= 0 && state != State.SkateJumping)
                         {
-                            positionRectangle.Y = (s.positionRectangle.Top - positionRectangle.Height - 4);
+                            positionRectangle.Y = (s.positionRectangle.Top - positionRectangle.Height);
                             Velocity.Y = 0;
                             if (state == State.SkateFalling)
                                 state = State.Skating;
